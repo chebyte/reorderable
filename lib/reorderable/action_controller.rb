@@ -8,7 +8,7 @@ module Reorderable
     end
 
     def reorder
-      model_klass_name.reorder!(params[model_klass_name.to_s.underscore.downcase.to_sym], {:column => params[:reorder_column]})
+      model_klass_name.reorder!(model_klass_name, params[model_klass_name.to_s.underscore.downcase.to_sym], {:column => params[:reorder_column]})
       render :nothing => true
     end
 
