@@ -6,7 +6,7 @@ Allows drag-n-drop reordering of ActiveRecord model items when using MySQL and j
 
 Add the following to your Gemfile:
 
-    gem 'reorderable', "~> 0.1"
+    gem 'reorderable', :git => "git://github.com/chebyte/reorderable.git"
 
 then run
 
